@@ -16,10 +16,10 @@ exe1. (optional) import package by modifying sys.path or PYTHONPATH
 
 exe2. import modulars in directory
 
-1. try 'from ex2math.quadraticroots import solveQuadraticRoots' and test
-2. start a new python shell and try 'from ex2math import solveQuadraticRoots'
-3. edit the __init__.py under exelmath
-3. start a new shell and try 'from exelmath import solveQuadraticRoots' again
+1. try 'from ex2math.quadraticroots import solveQuadraticRoots' and
+test 2. start a new python shell and try 'u' 3. edit the
+__init__.py under exelmath 3. start a new shell and try 'from
+exelmath import solveQuadraticRoots' again
 
 exe3. comments and docstrings
 
@@ -27,4 +27,4 @@ exe3. comments and docstrings
 1. add your the code to the ex3codes with filename ex3_yourname.py, commit to repo
 2. edit your code, add docstring, comments, change the format, etc.
 3. commit your code to repo.
-4. review the comments and docstrings with your group members and leave commits on google code web page. 
+4. review the comments and docstrings with your group members and leave commits on google code web page.
