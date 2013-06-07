@@ -16,3 +16,4 @@
 # be imported directly from exelmath.
 
 # FIXME ... some import statement
+from quadraticroots import solveQuadraticRoots
