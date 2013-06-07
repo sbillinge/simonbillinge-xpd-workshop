@@ -23,14 +23,24 @@
 
 def isint(s):
     'Return True if string can be converted to an integer.'
-    # +++your code here+++
-    return
+    returnitem = True
+    try:
+        int(s)
+    except ValueError:
+        returnitem = False
+    
+    return returnitem
 
 
 def isfloat(s):
     'Return True if string can be converted to a floating point value'
-    # +++your code here+++
-    return
+    returnitem = True
+    try:
+        float(s)
+    except ValueError:
+        returnitem = False
+    
+    return returnitem
 
 def isStringTrue(s):
     '''Translate string to its logical value.
@@ -38,9 +48,11 @@ def isStringTrue(s):
     Return True or False.
     Raise ValueError if the string is not understood.
     '''
-    if s == "yes":
+    import string
+    
+    if string.strip(s).lower() == "yes": # will tolerate leading and trailing whitespace and is now case insensitive
         return True
-    elif s == "no":
+    elif string.strip(s).lower() == "no":
         return False
     else:
         emsg = 'String must be either "yes" or "no".'
