@@ -19,11 +19,12 @@ class Test_isStringTrue(unittest.TestCase):
 
     def test_yesno(self):
         "check isStringTrue() for valid arguments."
-        self.assertTrue(isStringTrue("yes"))
+        self.assertTrue(isStringTrue("yes")) 
+        self.assertTrue(isStringTrue(" yes ")) 
+        self.assertTrue(isStringTrue("YES")) 
         self.assertFalse(isStringTrue("no"))
-        ## +++uncomment the line below+++
-        # self.assertFalse(isStringTrue("NO"))
-        # self.assertFalse(isStringTrue("No"))
+        self.assertFalse(isStringTrue("NO"))
+        self.assertFalse(isStringTrue("No"))
         return
 
     def test_other(self):
